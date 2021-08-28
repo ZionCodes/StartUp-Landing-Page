@@ -1,0 +1,307 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1D2127;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+nav a img {
+  margin: 1rem;
+}
+
+.welcome {
+  height: 100vh;
+  background-image: url(../img/blurry-gradient-haikei.svg);
+  background-size: cover;
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+  padding-top: 5rem;
+  margin: 1rem;
+}
+
+.intro .intro-wrap h1 {
+  color: white;
+  font-size: 3em;
+}
+
+.intro .intro-wrap p {
+  color: #858EA0;
+  font-size: 1.5em;
+}
+
+.intro .intro-wrap button {
+  padding: 1rem 2rem;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  margin: 1rem .5rem 1rem 0;
+  font-weight: 600;
+}
+
+.intro .intro-wrap .first {
+  background-color: #1489F7;
+}
+
+.intro .intro-wrap .first:hover {
+  background-color: #276eb1;
+}
+
+.intro .intro-wrap .second {
+  background-color: #262A33;
+}
+
+.intro .intro-wrap .second:hover {
+  background-color: #37393d;
+}
+
+@media screen and (max-width: 400px) {
+  h1 {
+    text-align: center;
+  }
+  p {
+    text-align: center;
+  }
+  button {
+    width: 100%;
+  }
+  .first {
+    margin-bottom: 0 !important;
+  }
+}
+
+.features {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.features ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.features ul li {
+  flex: 0 1 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 5px;
+}
+
+.features ul li * {
+  padding: .5rem;
+  text-align: center;
+}
+
+.features ul li h2 {
+  color: white;
+}
+
+.features ul li p {
+  color: #858EA0;
+}
+
+@media (min-width: 1020px) {
+  li {
+    position: relative;
+    margin: .5rem;
+    padding-bottom: 75px;
+  }
+  .list-first {
+    top: 75px;
+    right: 30px;
+  }
+  .list-third {
+    top: 75px;
+    left: 50px;
+  }
+  .list-fourth {
+    top: 75px;
+    right: 15px;
+  }
+  .list-fifth {
+    top: 75px;
+    left: 15px;
+  }
+}
+
+.pricing {
+  margin-top: 2rem;
+}
+
+.pricing .add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.pricing .add h1 {
+  color: white;
+  text-align: center;
+  font-size: 3em;
+  padding: 1rem;
+}
+
+.pricing .add p {
+  color: #858EA0;
+  text-align: center;
+  font-size: 1.5rem;
+  max-width: 550px;
+}
+
+.pricing .card-cover {
+  background-image: url(../img/pricing-illustration.svg);
+  background-size: cover;
+}
+
+.pricing .card {
+  padding: 1rem;
+  background-color: #2C3039;
+  margin: 0 auto;
+  max-width: 360px;
+  margin-top: 2rem;
+}
+
+.pricing .card h2 {
+  color: #858EA0;
+  padding: 1rem 1rem 1rem 0;
+  border-bottom: 1px solid #485462;
+}
+
+.pricing .card h2 span {
+  font-size: 2rem;
+  color: white;
+}
+
+.pricing .card .card-para {
+  padding: 1rem 1rem 1rem 0;
+  color: white;
+  border-bottom: 1px solid #485462;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.pricing .card .list p {
+  color: #858EA0;
+  padding: 1rem 1rem 1rem 0;
+  border-bottom: 1px solid #485462;
+  font-size: 1.4rem;
+}
+
+.pricing .card button {
+  padding: 1rem 2rem;
+  background-color: #1489F7;
+  color: white;
+  width: 100%;
+  border: none;
+  text-transform: uppercase;
+}
+
+.pricing .card button:hover {
+  background-color: #276eb1;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #15181D;
+  margin-top: 4rem;
+  padding: 2rem 3rem;
+}
+
+.contact h1 {
+  color: white;
+  font-size: 2em;
+  color: white;
+}
+
+.contact button {
+  padding: 1rem 2rem;
+  background-color: #1489F7;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  font-weight: 600;
+}
+
+.contact button:hover {
+  background-color: #276eb1;
+}
+
+@media screen and (max-width: 640px) {
+  .contact {
+    flex-direction: column;
+  }
+  .contact button {
+    margin-top: 1rem;
+  }
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+footer p {
+  color: white;
+}
+
+footer a {
+  color: white;
+}
+
+footer .left .logo {
+  padding-bottom: 1rem;
+}
+
+footer .right .links {
+  display: flex;
+}
+
+footer .right .links a {
+  padding: .5rem;
+  text-decoration: none;
+  display: flex;
+}
+
+footer .right .links a:hover {
+  text-decoration: underline;
+}
+
+footer .right .social {
+  padding-bottom: 1rem;
+}
+
+@media screen and (max-width: 700px) {
+  footer {
+    flex-direction: column-reverse;
+  }
+  footer .left {
+    padding: .5rem;
+  }
+  footer .left .logo {
+    display: none;
+  }
+}
+
+.bottom {
+  background-image: url(../img/polygon-scatter-haikei.svg);
+  background-size: cover;
+}

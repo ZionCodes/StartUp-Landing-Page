@@ -1,0 +1,337 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+$para-color: #858EA0;
+$text-main: white;
+$button-blue: #1489F7;
+$button-dark: #262A33;
+$card-color: #2C3039;
+$buy-dark: #15181D;
+$button-hover: #276eb1;
+$dark-hover: #37393d;
+
+body {
+    background-color: #1D2127;
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+nav a img {
+    margin: 1rem;
+}
+
+.welcome {
+    height: 100vh;
+    background-image: url(../img/blurry-gradient-haikei.svg);
+    background-size: cover;
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    padding-top: 5rem;
+    margin: 1rem;
+
+    .intro-wrap {
+        
+        h1 {
+            color:$text-main;
+            font-size: 3em;
+        }
+        p {
+            color: $para-color;
+            font-size: 1.5em;
+        }
+        button {
+            padding: 1rem 2rem;
+            color: $text-main;
+            text-transform: uppercase;
+            border: none;
+            margin: 1rem .5rem 1rem 0;
+            font-weight: 600;
+
+            
+            
+        }
+        .first {
+            &:hover {
+                background-color: $button-hover;
+            }
+            background-color: $button-blue;
+        }
+        .second {
+            background-color: $button-dark;
+            &:hover {
+                background-color: $dark-hover;
+            }
+        }
+
+    }
+
+    
+
+}
+
+@media screen and (max-width: 400px){
+    h1 {
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    button {
+        width: 100%;
+        
+    }
+    .first {
+        margin-bottom: 0 !important;
+    }
+}
+
+.features {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        list-style-type: none;
+
+        li {
+            flex:  0 1 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin: 5px;
+
+            * {
+                padding: .5rem;
+                text-align: center;
+            }
+
+            h2 {
+                color: $text-main;
+            }
+            p {
+                color: $para-color;
+            }
+
+        }
+    }
+
+}
+
+@media (min-width:1020px) {
+
+
+         li {
+             position: relative;
+             margin: .5rem;
+             padding-bottom: 75px;
+         }
+         .list-first {
+             top: 75px;
+             right: 30px;
+         }
+         
+         .list-third {
+             top: 75px;
+             left: 50px;
+         }
+         .list-fourth {
+             top: 75px;
+             right: 15px;
+         }
+         .list-fifth {
+             top: 75px;
+             left: 15px;
+         }
+    
+}
+
+.pricing {
+    margin-top: 2rem;
+
+    .add {
+        display: flex;
+        justify-content: center;
+        align-items:center ;
+        flex-direction: column;
+
+        h1 {
+            color: $text-main;
+            text-align: center;
+            font-size: 3em;
+            padding: 1rem;
+        }
+        p {
+            color: $para-color;
+            text-align: center;
+            font-size: 1.5rem;
+            max-width: 550px;
+        }
+    }
+
+    .card-cover {
+        background-image: url(../img/pricing-illustration.svg);
+        background-size: cover;
+    }
+
+        .card {
+            padding: 1rem;
+            background-color: $card-color;
+            margin: 0 auto;
+            max-width: 360px;
+            margin-top: 2rem;
+
+            h2 {
+                color: $para-color;
+                padding: 1rem 1rem 1rem 0;
+                border-bottom: 1px solid #485462;
+                span {
+                    font-size: 2rem;
+                    color: $text-main;
+                }
+            }
+
+            .card-para {
+                padding: 1rem 1rem 1rem 0;
+                color: $text-main;
+                border-bottom: 1px solid #485462;
+                font-size: 1.4rem;
+                font-weight: 600;
+            }
+
+            .list {
+
+                p {
+                    color: $para-color;
+                    padding: 1rem 1rem 1rem 0;
+                    border-bottom: 1px solid #485462 ;
+                    font-size: 1.4rem;
+                }
+
+            }
+
+            button {
+                padding: 1rem 2rem;
+                background-color: $button-blue;
+                color: $text-main;
+                width: 100%;
+                border: none;
+                text-transform: uppercase;
+
+                &:hover {
+                    background-color: $button-hover;
+                }
+            }
+        }
+    
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $buy-dark;
+    margin-top: 4rem;
+    padding: 2rem 3rem;
+    
+    h1 {
+        color: $text-main;
+        font-size: 2em;
+        color: $text-main;
+
+    }
+
+    button {
+        padding: 1rem 2rem;
+        background-color: $button-blue;
+        color: $text-main;
+        text-transform: uppercase;
+        border: none;
+        font-weight: 600;
+        &:hover {
+            background-color: $button-hover;
+        }
+    }
+}
+
+@media screen and (max-width:640px) {
+    .contact {
+        flex-direction: column;
+
+        button {
+            margin-top: 1rem;
+        }
+    }
+}
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+
+    p {
+        color: $text-main;
+    }
+    a {
+        color: $text-main
+    }
+
+    .left {
+        .logo {
+            padding-bottom: 1rem;
+        }
+    }
+
+    .right {
+        .links {
+            display: flex;
+        }
+        .links a {
+            padding: .5rem;
+            text-decoration: none;
+            display: flex;
+        
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        .social {
+            padding-bottom: 1rem;
+        }
+    }
+}
+
+@media screen and (max-width:700px) {
+    footer {
+        flex-direction: column-reverse;
+
+
+        .left {
+            padding: .5rem;
+            .logo {
+                display: none;
+            }
+        }
+}
+
+}
+
+.bottom {
+    background-image: url(../img/polygon-scatter-haikei.svg);
+    background-size: cover;
+}
