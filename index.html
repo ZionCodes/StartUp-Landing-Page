@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
     <script defer src="./js/script.js"></script>
+    <script src="https://kit.fontawesome.com/7b675e08b3.js" crossorigin="anonymous"></script>
     <title>StartUp Landing Page</title>
 </head>
 <body>
@@ -22,7 +23,10 @@
                 <h1>Landing Page for StartUps</h1>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam mollitia, explicabo expedita aut amet assumenda? Qui minus temporibus rerum. Quisquam?</p>
                 <button class="first">Pre Order Now</button>
-                <button class="second touch">Get in touch</button>
+                <a href="#demo-modal">
+                    <button class="second">Get in touch</button>
+                </a>
+                
             </div>
         </section>
     </div>
@@ -81,7 +85,10 @@
     <div class="bottom">
         <section class="contact">
             <h1>Still not convinced?</h1>
-            <button class="touch">Get in Touch</button>
+            <a href="#demo-modal">
+                <button class="touch">Get in Touch</button>
+            </a>
+            
         </section>
         <footer>
             <div class="left">
@@ -92,9 +99,9 @@
             </div>
             <div class="right">
                 <div class="social">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
+                    <i class="fab fa-twitter fa-2x"></i>
+                    <i class="fab fa-facebook fa-2x"></i>
+                    <i class="fab fa-linkedin fa-2x"></i>
                 </div>
                 <div class="links">
                     <a href="#">Contact</a>
@@ -103,7 +110,19 @@
                     <a href="#">Support</a>
                 </div>
             </div>
+            
         </footer>
+    </div>
+    <div id="demo-modal" class="modal">
+        <div class="modal__content">
+            <h2>Leave us a message!</h2>
+            <form action="">
+                <input type="email" placeholder=" Email address">
+                <textarea name="message" id="message" cols="30" rows="5" placeholder=" Leave a message"></textarea>
+            </form>
+            <a href="#" class="modal__close">&times;</a>
+        </div>
+        
     </div>
 </body>
 </html>
