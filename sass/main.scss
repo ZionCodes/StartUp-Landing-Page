@@ -313,6 +313,11 @@ footer {
 
         .social {
             padding-bottom: 1rem;
+
+            i {
+                color: $para-color;
+                padding: .5rem;
+            }
         }
     }
 }
