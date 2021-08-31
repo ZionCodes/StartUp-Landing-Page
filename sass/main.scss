@@ -301,7 +301,7 @@ footer {
             display: flex;
         }
         .links a {
-            padding: .5rem;
+            padding: 0.5rem;
             text-decoration: none;
             display: flex;
         
@@ -313,12 +313,17 @@ footer {
 
         .social {
             padding-bottom: 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
 
-            i {
-                color: $para-color;
-                padding: .5rem;
+            a {
+                color: $text-main;
+                padding: 0.5rem;
             }
-        }
+
+            
     }
 }
 
